@@ -53,7 +53,7 @@ export default class Button extends Component {
       <TouchableOpacity
         onPress={onPress.bind(this)}
         style={[styles.container, style, disabled && disabledStyle]}
-        disabled >
+        disabled={disabled} >
         {children ? children : (
           <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
             {icon ? (
