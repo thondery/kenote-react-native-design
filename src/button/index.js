@@ -49,31 +49,23 @@ export default class Button extends Component {
       disabled, 
       disabledStyle 
     } = this.props
-    if (children) {
-      return (
-        <TouchableOpacity 
-          disabled={disabled}
-          onPress={onPress.bind(this)}
-          style={[styles.container, style, disabled && disabledStyle]}>
-          {children}
-        </TouchableOpacity>
-      )
-    }
-    else {
-      return (
-        <TouchableOpacity 
-          disabled={disabled}
-          onPress={onPress.bind(this)}
-          style={[styles.container, style, disabled && disabledStyle]}>
-          {icon ? (
-            <Icon name={icon} 
-              size={iconSize} 
-              color={iconColor} 
-              style={{marginRight: 5}} />
-          ) : null}
-          <Text style={[styles.labelStyle, labelStyle]} >{label}</Text>
-        </TouchableOpacity>
-      )
-    }
+    return (
+      <TouchableOpacity
+        onPress={onPress.bind(this)}
+        style={[styles.container, style, disabled && disabledStyle]}
+        disabled >
+        {children ? children : (
+          <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+            {icon ? (
+              <Icon name={icon} 
+                size={iconSize} 
+                color={iconColor} 
+                style={{marginRight: 5}} />
+            ) : null}
+            <Text style={[styles.labelStyle, labelStyle]} >{label}</Text>
+          </View>
+        )}
+      </TouchableOpacity>
+    )
   }
 }
