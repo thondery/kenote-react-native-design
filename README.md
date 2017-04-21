@@ -131,6 +131,76 @@ import { RightButton } from 'kenote-react-native-design'
 | color         | \<String\>        | undefined  | 按钮文字颜色 |
 | onPress       | \<Function\>      | () => null | 按钮点击事件 |
 
+## Form
+
+#### 使用
+
+```jsx
+import { Form } 'kenote-react-native-design'
+
+const options = [
+  {
+    type: 'forminput',
+    name: 'username',
+    label: '用户名',
+    labelIcon: 'user',
+    labelColor: '#8cc3b2',
+    placeholder: '用户名/邮箱',
+    returnKeyType: 'next',
+    isRequired: true
+  },
+  {
+    type: 'forminput',
+    name: 'password',
+    label: '密  码',
+    labelIcon: 'lock',
+    labelColor: '#8cc3b2',
+    placeholder: '密码',
+    password: true,
+    returnKeyType: 'default',
+    isRequired: true
+  }
+]
+
+<Form
+  ref={'formlogin'}
+  options={options}
+  buttonLabel={'登 录'}
+  buttonPress={ e => console.log(e) } />
+// e = { username: '', password: '' }
+```
+
+#### Options Element
+
+```javascript
+{
+  type              : 'forminput',  // 单元类型，目前只支持 'forminput'
+  name              : 'username',   // 单元名称
+  label             : '用户名',      // 单元标签
+  labelIcon         : 'user',       // 单元标签图标；如果启用，label则失效
+  labelColor        : '#8cc3b2',    // 单元标签颜色
+  placeholder       : '密码',        // 单元描述文字
+  placeholderColor  : '#ccc',       // 单元描述文字颜色
+  password          : true,         // 是否是密码类型
+  keyboardType      : 'default',    // 手机键盘类型; 'default'|'numeric'|'email-address'|'ascii-capable'|'numbers-and-punctuation'|'url'|'number-pad'|'phone-pad'|'name-phone-pad'|'decimal-pad'|'twitter'|'web-search'
+  returnKeyType     : 'default',    // 手机键盘`return`键类型; 'default'|'go'|'google'|'join'|'next'|'route'|'search'|'send'|'yahoo'|'done'|'emergency-call'
+  isRequired        : true          // 是否必填项
+}
+```
+
+### Props
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| style               | \<Object\>        | null       | 外观样式 |
+| options             | \<Collection\>    | []         | 表单结构数据 |
+| buttonLabel         | \<String\>        | 'Submit'   | 提交按钮文字名称 |
+| buttonPress         | \<Function\>      | () => null | 提交表单事件 |
+| buttonDisabledStyle | \<Object\>        | null       | 提交按钮禁用状态样式 |
+| pending             | \<Bool\>          | false      | 表单提交状态，提交中\<true\> \| 提交完成\<false\> |
+| marginWidth         | \<Number\>        | 15         | 表单左右两侧边距 |
+| textInputStyle      | \<Object\>        | null       | 表单内文本框样式 |
+
 
 
 [npm-image]: https://img.shields.io/npm/v/kenote-react-native-design.svg
