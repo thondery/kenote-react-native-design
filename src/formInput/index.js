@@ -111,7 +111,9 @@ export default class FormInput extends Component {
             width: formWidth - labelCompentent[labelType].width - marginWidth * 2 - passwordIconWidth
           }]}
           autoCapitalize={'none'}
+          underlineColorAndroid={'transparent'}
           password={password && !this.state.showPassword}
+          secureTextEntry={password && !this.state.showPassword}
           placeholder={placeholder}
           placeholderColor={placeholderColor}
           returnKeyType={returnKeyType}

@@ -1,6 +1,6 @@
 {
   "name": "kenote-react-native-design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native components...",
   "main": "./src/index.js",
   "scripts": {

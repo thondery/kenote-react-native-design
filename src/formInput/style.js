@@ -10,6 +10,7 @@ export default StyleSheet.create({
   },
   textInputStyle: {
     height: 50,
+    padding: 0,
     paddingLeft: 10,
     paddingRight: 10
   },
