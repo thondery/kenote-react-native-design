@@ -74,7 +74,7 @@ export const LeftButton = ({...props}) =>
     style={[{ backgroundColor: 'transparent' }, props.style]}
     onPress={props.onPress}>
     <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
-      <Icon name={'angle-right'} color={props.color} size={32} style={{ marginRight: 5 }} />
+      <Icon name={'angle-left'} color={props.color} size={32} style={{ marginRight: 5 }} />
       <Text style={[{ fontSize: 18 }, props.color && { color: props.color }]}>{props.label}</Text>
     </View>
   </Button>
