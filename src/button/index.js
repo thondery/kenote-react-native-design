@@ -29,7 +29,7 @@ export default class Button extends Component {
     icon: undefined,
     iconColor: '#fff',
     iconSize: 20,
-    children: null,
+    children: undefined,
     disabled: false,
     disabledStyle: styles.disabledStyle,
     onPress: () => null

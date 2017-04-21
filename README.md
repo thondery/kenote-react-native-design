@@ -77,3 +77,51 @@ import { Button } from 'kenote-react-native-design'
 | disabledStyle | \<Object\>        | null       | 按钮禁用样式 |
 | onPress       | \<Function\>      | () => null | 按钮点击事件 |
 | children      | \<React.element\> | undefined  | 按钮内嵌子元素 |
+
+## LeftButton
+
+#### 使用
+
+```jsx
+import { LeftButton } from 'kenote-react-native-design'
+
+<LeftButton
+  style={{ backgroundColor: '#666666' }}
+  label={'后退'}
+  color={'#ffffff'}
+  onPress={() => console.log('后退')}
+  />
+```
+
+### Props
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| style         | \<Object\>        | null       | 外观样式 |
+| label         | \<String\>        | undefined  | 按钮文字 |
+| color         | \<String\>        | undefind   | 按钮文字颜色 |
+| onPress       | \<Function\>      | () => null | 按钮点击事件 |
+
+## RightButton
+
+#### 使用
+
+```jsx
+import { RightButton } from 'kenote-react-native-design'
+
+<RightButton
+  style={{ backgroundColor: '#666666' }}
+  label={'前进'}
+  color={'#ffffff'}
+  onPress={() => console.log('前进')}
+  />
+```
+
+### Props
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| style         | \<Object\>        | null       | 外观样式 |
+| label         | \<String\>        | undefined  | 按钮文字 |
+| color         | \<String\>        | undefind   | 按钮文字颜色 |
+| onPress       | \<Function\>      | () => null | 按钮点击事件 |
