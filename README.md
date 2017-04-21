@@ -2,6 +2,11 @@
 
 一个关于 React Native 的 UI组件库，基于 react 15.4.x 和 react-native 0.42.x
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![dependencies Status][dependencies-image]][dependencies-url]
+[![Gratipay][licensed-image]][licensed-url]
+
 ### 相关依赖
 
 - react-native-spinkit
@@ -125,3 +130,14 @@ import { RightButton } from 'kenote-react-native-design'
 | label         | \<String\>        | undefined  | 按钮文字 |
 | color         | \<String\>        | undefined  | 按钮文字颜色 |
 | onPress       | \<Function\>      | () => null | 按钮点击事件 |
+
+
+
+[npm-image]: https://img.shields.io/npm/v/kenote-react-native-design.svg
+[npm-url]: https://www.npmjs.org/package/kenote-react-native-design
+[downloads-image]: https://img.shields.io/npm/dm/kenote-react-native-design.svg
+[downloads-url]: https://npmjs.org/package/kenote-react-native-design
+[dependencies-image]: https://david-dm.org/thondery/kenote-react-native-design/status.svg
+[dependencies-url]: https://david-dm.org/thondery/kenote-react-native-design
+[licensed-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[licensed-url]: https://github.com/thondery/kenote-react-native-design/blob/master/LICENSE
