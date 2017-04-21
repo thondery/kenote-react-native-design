@@ -70,7 +70,7 @@ import { Button } from 'kenote-react-native-design'
 | style         | \<Object\>        | null       | 外观样式，高度默认为 50 |
 | label         | \<String\>        | undefined  | 按钮文字 |
 | labelStyle    | \<Object\>        | null       | 按钮文字样式 |
-| icon          | \<String\>        | undefined  | 图标名称，图标使用了 FontAwesome，具体名称可到官网查询。   |
+| icon          | \<String\>        | undefined  | 图标名称，图标使用了 FontAwesome，具体名称可到官网查询。|
 | iconColor     | \<String\>        | '#fff'     | 图标颜色 |
 | iconSize      | \<Number\>        | 20         | 图标大小 |
 | disabled      | \<Bool\>          | false      | 按钮禁用状态 |
@@ -99,7 +99,7 @@ import { LeftButton } from 'kenote-react-native-design'
 |----------|------|---------|-------------|
 | style         | \<Object\>        | null       | 外观样式 |
 | label         | \<String\>        | undefined  | 按钮文字 |
-| color         | \<String\>        | undefind   | 按钮文字颜色 |
+| color         | \<String\>        | undefined  | 按钮文字颜色 |
 | onPress       | \<Function\>      | () => null | 按钮点击事件 |
 
 ## RightButton
@@ -123,5 +123,5 @@ import { RightButton } from 'kenote-react-native-design'
 |----------|------|---------|-------------|
 | style         | \<Object\>        | null       | 外观样式 |
 | label         | \<String\>        | undefined  | 按钮文字 |
-| color         | \<String\>        | undefind   | 按钮文字颜色 |
+| color         | \<String\>        | undefined  | 按钮文字颜色 |
 | onPress       | \<Function\>      | () => null | 按钮点击事件 |
