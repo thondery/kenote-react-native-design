@@ -2,8 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import {
   View, 
   Text,
-  TouchableOpacity,
-  TouchableHighlight
+  TouchableOpacity
 } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import styles from './style'
@@ -69,3 +68,23 @@ export default class Button extends Component {
     )
   }
 }
+
+export const LeftButton = ({...props}) =>
+  <Button
+    style={[{ backgroundColor: 'transparent' }, props.style]}
+    onPress={props.onPress}>
+    <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+      <Icon name={'angle-right'} color={props.color} size={32} style={{ marginRight: 5 }} />
+      <Text style={[{ fontSize: 18 }, props.color && { color: props.color }]}>{props.label}</Text>
+    </View>
+  </Button>
+
+export const RightButton = ({...props}) =>
+  <Button
+    style={[{ backgroundColor: 'transparent' }, props.style]}
+    onPress={props.onPress}>
+    <View style={{ alignItems: 'center', justifyContent: 'center', flexDirection: 'row' }}>
+      <Text style={[{ fontSize: 18 }, props.color && { color: props.color }]}>{props.label}</Text>
+      <Icon name={'angle-right'} color={props.color} size={32} style={{ marginLeft: 5 }} />
+    </View>
+  </Button>
