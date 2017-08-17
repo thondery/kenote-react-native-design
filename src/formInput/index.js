@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { 
   View, 
+  ViewPropTypes,
   Text,
   TextInput 
 } from 'react-native'
@@ -11,7 +13,7 @@ import styles, { width, height } from './style'
 export default class FormInput extends Component {
 
   static propTypes = {
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     textInputRef: PropTypes.string,
     textInputStyle: TextInput.propTypes.style,
     labelText: PropTypes.string,

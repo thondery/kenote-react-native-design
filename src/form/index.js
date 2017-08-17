@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { 
   View, 
+  ViewPropTypes,
   Text,
   TextInput 
 } from 'react-native'
@@ -25,16 +27,16 @@ const initItem = {
 export default class Form extends Component {
 
   static propTypes = {
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     options: PropTypes.array,
     buttonLabel: PropTypes.string,
     buttonPress: PropTypes.func,
     disable: PropTypes.bool,
-    inputViewStyle: View.propTypes.style,
-    textInputStyle: View.propTypes.style,
+    inputViewStyle: ViewPropTypes.style,
+    textInputStyle: ViewPropTypes.style,
     formWidth: PropTypes.number,
-    buttonStyle: View.propTypes.style,
-    buttonDisabledStyle: View.propTypes.style,
+    buttonStyle: ViewPropTypes.style,
+    buttonDisabledStyle: ViewPropTypes.style,
     marginWidth: PropTypes.number,
     children: PropTypes.element,
     pending: PropTypes.bool

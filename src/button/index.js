@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import {
   View, 
+  ViewPropTypes,
   Text,
   TouchableOpacity
 } from 'react-native'
@@ -10,7 +12,7 @@ import styles from './style'
 export default class Button extends Component {
 
   static propTypes = {
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     label: PropTypes.string,
     labelStyle: Text.propTypes.style,
     icon: PropTypes.string,
@@ -18,7 +20,7 @@ export default class Button extends Component {
     iconSize: PropTypes.number,
     children: PropTypes.element,
     disabled: PropTypes.bool,
-    disabledStyle: View.propTypes.style,
+    disabledStyle: ViewPropTypes.style,
     onPress: PropTypes.func
   }
 
