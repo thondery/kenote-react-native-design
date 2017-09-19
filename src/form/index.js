@@ -10,6 +10,7 @@ import Spinner from 'react-native-spinkit'
 import FormInput from '../formInput'
 import Button from '../button'
 import styles, { width, height } from './style'
+import _ from 'lodash'
 
 const initItem = {
   type: 'forminput',
